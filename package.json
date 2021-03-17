@@ -1,0 +1,23 @@
+{
+  "name": "site-skincast",
+  "version": "1.0.0",
+  "description": "site skincast",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:css/style.css --style expanded",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixe/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natthanguilhot/site-skincast.git"
+  },
+  "keywords": [
+    "skincast"
+  ],
+  "author": "natthan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natthanguilhot/site-skincast/issues"
+  },
+  "homepage": "https://github.com/natthanguilhot/site-skincast#readme"
+}
