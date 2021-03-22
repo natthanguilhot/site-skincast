@@ -4,4 +4,113 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+main:hover > .barsection {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.hover-text-blue:hover {
+  color: #3b82f6 !important;
+}
+.hover-text-blue:visited {
+  color: black;
+}
+
+.barsection {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 1s ease-in-out;
+  transition-delay: 0s;
+}
+@media (max-width: 768px) {
+  .barsection {
+    transform: scaleX(1);
+    animation: transitiontopY 0.4s;
+  }
+}
+
+.bg-hb {
+  background: #133165;
+}
+
+.transitiontopY1 {
+  animation: transitiontopY 0.4s;
+  animation-delay: 0s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY2 {
+  animation: transitiontopY 0.4s;
+  animation-delay: 0.4s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY3 {
+  animation: transitiontopY 0.4s;
+  animation-delay: 0.8s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY4 {
+  animation: transitiontopY 0.4s;
+  animation-delay: 1.2s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY5 {
+  animation: transitiontopY 0.4s;
+  animation-delay: 1.6s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY6 {
+  animation: transitiontopY 0.4s;
+  animation-delay: 2s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+@keyframes transitiontopY {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+iframe {
+  width: 90%;
+  height: 20rem;
+  margin: auto;
+}
+
 /*# sourceMappingURL=style.css.map */

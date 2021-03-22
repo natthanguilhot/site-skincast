@@ -1,0 +1,63 @@
+main {
+    &:hover > .barsection {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+}
+.hover-text-blue {
+    &:hover {
+      color: rgba(59, 130, 246)!important;
+    }
+    &:visited {
+      color: black;
+    }
+}
+.barsection {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 1s ease-in-out;
+    transition-delay: 0s;
+    @media (max-width: 768px) {
+      transform: scaleX(1);
+      animation: transitiontopY $transdura;
+    }  
+}
+.bg-hb {
+    background: lighten($bg-hb, 10);
+}
+@for $i from 1 through 6 {
+    .transitiontopY#{$i} {
+      animation: transitiontopY $transdura;
+      animation-delay: $transdura*$i - $transdura;
+      transform-origin: bottom;
+      transition-timing-function: cubic-bezier(1,0,0,1);
+      animation-fill-mode: backwards;
+    }
+  }
+  @keyframes transitiontopY {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    25% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    80% {
+      opacity: 0.6;
+    }
+    90% {
+      opacity: 0.9;
+    }
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}
+iframe {
+  width: 90%;
+  height: 20rem;
+  margin: auto;
+}

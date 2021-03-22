@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/natthanguilhot/site-skincast/issues"
   },
-  "homepage": "https://github.com/natthanguilhot/site-skincast#readme"
+  "homepage": "https://github.com/natthanguilhot/site-skincast#readme",
+  "dependencies": {
+    "tarteaucitronjs": "^1.8.5"
+  }
 }

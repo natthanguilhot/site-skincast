@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta charset="UTF-8">    
     <title>SkinCast</title>
     <link rel="icon" href="./img/Icon.ico" type="image/x-icon">
     <meta name="description" content="SkinCast est une attelle fabriqué à l'aide d'imprimante 3D.">
@@ -12,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/tailwind.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8">
 
     <!-- ajout des fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,42 +26,78 @@
     <meta name="twitter:title" content="">
     <!-- Fin élements affiché lors d'un partage -->
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZ8GFLW8FZ"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-EZ8GFLW8FZ');
-    </script>  
-    <!-- END Global site tag (gtag.js) - Google Analytics -->
-
     <!-- Fontawesome (icone) -->
     <script src="https://kit.fontawesome.com/d4c8c8f50d.js" crossorigin="anonymous"></script>
 
+        <!-- Gestion des cookies -->
+        <script src="./node_modules/tarteaucitronjs/tarteaucitron.js"></script>
+        <script>
+        tarteaucitron.init({
+            "privacyUrl": "", /* Privacy policy url */
+    
+            "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+            "cookieName": "tarteaucitron", /* Cookie name */
+    
+            "orientation": "bottom", /* Banner position (top - bottom) */
+                            
+            "showAlertSmall": false, /* Show the small banner on bottom right */
+            "cookieslist": false, /* Show the cookie list */
+                            
+            "closePopup": false, /* Show a close X on the banner */
+    
+            "showIcon": false, /* Show cookie icon to manage cookies */
+            "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+    
+            "adblocker": false, /* Show a Warning if an adblocker is detected */
+                            
+            "DenyAllCta" : true, /* Show the deny all button */
+            "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+            "highPrivacy": true, /* HIGHLY RECOMMANDED Disable auto consent */
+                            
+            "handleBrowserDNTRequest": true, /* If Do Not Track == 1, disallow all */
+    
+            "removeCredit": true, /* Remove credit link */
+            "moreInfoLink": true, /* Show more info link */
+    
+            "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+            "useExternalJs": false, /* If false, the tarteaucitron.js file will be loaded */
+    
+            "cookieDomain": "hyvirea.fr", /* Shared cookie for multisite */
+                            
+            "readmoreLink": "", /* Change the default readmore link */
+    
+            "mandatory": true, /* Show a message about mandatory cookies */
+        });
+    
+        tarteaucitron.user.gtagUa = 'G-EZ8GFLW8FZ';
+        tarteaucitron.user.gtagMore = function () { 'G-6C1KV2CMVY' };
+        (tarteaucitron.job = tarteaucitron.job || []).push('gtag','youtube');
+    
+        </script>
+    
+
 </head>
 <body>
-<header class="h-96 w-full lg:flex justify-around items-center">
-    <div class="h-full w-5/12 p-4">
-        <img src="./img/hand-117210_1280.png" alt="image représentant une attelle skincast" class="h-full w-full">
-    </div>
-    <div class="flex justify-center items-center p-4">
-        <h1 class="text-6xl">Skincast</h1><i class="fas fa-hand-holding-medical h-full text-3xl ml-4"></i>
-    </div>
-</header> 
+    <header class="h-96 w-full lg:flex justify-around items-center">
+        <div class="h-full w-5/12 p-4">
+            <img src="./img/hand-117210_1280.png" alt="image représentant une attelle skincast" class="h-full w-full">
+        </div>
+        <div class="flex justify-center items-center p-4">
+            <h1 class="text-6xl">Skincast</h1><i class="fas fa-hand-holding-medical h-full text-3xl ml-4"></i>
+        </div>
+    </header> 
     <main class="leading-7">
         <h2 class="flex justify-center text-3xl bold p-8 transitiontopY1 text-center">Une attelle révolutionnaire - Skincast</h2>
         <div class="barsection h-1 w-8/12 bg-hb rounded-2xl m-auto"></div>
         <div class="lg:w-full p-4 transitiontopY2 lg:flex m-auto lg:justify-center items-center">
-            <iframe src="https://www.youtube.com/embed/-ZUiF44gUGw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96"></iframe>
-            <p class="m-auto my-4 lg:m-8 lg:w-5/12">Faire voyager les personnes dans le monde incroyable de la réalité virtuelle pour accompagner le patient pendant des opérations médicales. La réalité virtuelle, une aide thérapeutique ? La VR (réalité virtuelle) ne se limite pas au divertissement. Le champ des possibles de la VR est énorme et <strong>s’applique dès à présent dans le secteur médical.</strong> En effet, cela peut être un soutien thérapeutique non négligeable pour accompagner le patient. Qu’il s’agisse d’anesthésie, de traitement ou de diagnostique, la réalité virtuelle s'est avérée<strong> très efficace pour calmer le patient pendant une opération.</strong> Cette technologie, dans le secteur de la santé à fait ses preuves, et les possibilités changeront la médecine de demain. Hyvirea est destinée aux interventions chirurgicales en anesthésie loco-régional, elle permet de limiter le stress du patient lors de l’intervention. </p>
+            <div videoID="-ZUiF44gUGw" class="youtube_player w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96"></div>   
+            <p class="m-auto my-4 lg:m-8 lg:w-5/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac efficitur nisi. Mauris convallis mattis leo, eget dignissim justo pulvinar eget. Quisque placerat vitae libero sed ultricies. Vestibulum lobortis porta enim, in maximus ligula aliquam non. Maecenas nec nisi eget ipsum tincidunt hendrerit non eu neque. Sed suscipit suscipit quam, vel euismod tellus porttitor vitae. Nullam quis ex enim. Vestibulum magna ligula, pretium non nulla vitae, venenatis maximus turpis. Nullam tristique, dui vitae iaculis pulvinar, arcu dui scelerisque felis, nec commodo metus libero eget lorem. Sed cursus augue sed massa viverra fringilla. Maecenas in libero vel dui sollicitudin ornare. Nunc id neque eget nisl lacinia convallis. Curabitur id turpis euismod, tincidunt velit sed, sodales velit.</p>
         </div>
         <div class="w-full m-auto bg-gray-50 py-8 transitiontopY3 flex flex-col">
-            <p class="w-11/12 lg:w-10/12 m-auto">Pour cela, le patient est immergé dans un <strong>monde virtuel relaxant</strong>. De cette manière, lors de l’intervention, un infirmier anesthésiste (IADE) suivra l’avancée du patient dans l’application. De plus, il peut le guider et paramétrer l’application selon les désirs du patient (envies, peurs...). Hivyrea est une application simple, le patient est observateur de l’environnement. <strong>Il se laisse transporter dans un monde rassurant et complètement différent du bloc opératoire dans lequel il se situe physiquement.</strong></p>
+            <p class="w-11/12 lg:w-10/12 m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac efficitur nisi. Mauris convallis mattis leo, eget dignissim justo pulvinar eget. Quisque placerat vitae libero sed ultricies. Vestibulum lobortis porta enim, in maximus ligula aliquam non. Maecenas nec nisi eget ipsum tincidunt hendrerit non eu neque. Sed suscipit suscipit quam, vel euismod tellus porttitor vitae. Nullam quis ex enim. Vestibulum magna ligula, pretium non nulla vitae, venenatis maximus turpis. Nullam tristique, dui vitae iaculis pulvinar, arcu dui scelerisque felis, nec commodo metus libero eget lorem. Sed cursus augue sed massa viverra fringilla. Maecenas in libero vel dui sollicitudin ornare. Nunc id neque eget nisl lacinia convallis. Curabitur id turpis euismod, tincidunt velit sed, sodales velit.</p>
         </div>
         <div class="lg:w-full p-4 transitiontopY4 flex m-auto lg:justify-center items-center flex-col-reverse lg:flex-row">
-            <p class="my-4 m-auto lg:m-8 lg:w-5/12"><strong>Le projet HYVIREA (Hypnose Virtual Reality)</strong> a été initié pendant la période de confinement suite à la pandémie du COVID-19 et réalisé par le <a href="https://www.vrtig0.fr" target="_blank" rel="noopener" class="underline text-black visited:text-purple-600 hover-text-blue">studio Vr'tig0.</a> En effet, depuis le début du confinement les hôpitaux français ont accueilli un grand nombre de patient atteints de ce virus et se sont vu utiliser une quantité conséquente de curare dans les services de réanimation afin de les plonger dans un coma artificiel. Le problème étant que cette molécule est aussi utilisée en bloc opératoire afin d’anesthésier les patients lors d’anesthésies générale. Cela a eu pour double effet d’augmenter la consommation d’anesthésiants dans les services de soin intensif et de créer une pénurie de ces produits limitant les interventions chirurgicales sous anesthésie générale (annulées ou reportées). <strong>Certains médecins de l’hôpital d’Arles se sont donc rapprochés très rapidement du studio de production <a href="https://www.vrtig0.fr" target="_blank" rel="noopener" class="underline text-black visited:text-purple-600 hover-text-blue">Arlésien VR’TIG.0</a> pour envisager une solution complémentaire aux pratiques de l’hypnose au travers d’une application immersive de réalité virtuelle.</strong> </p>
+            <p class="my-4 m-auto lg:m-8 lg:w-5/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac efficitur nisi. Mauris convallis mattis leo, eget dignissim justo pulvinar eget. Quisque placerat vitae libero sed ultricies. Vestibulum lobortis porta enim, in maximus ligula aliquam non. Maecenas nec nisi eget ipsum tincidunt hendrerit non eu neque. Sed suscipit suscipit quam, vel euismod tellus porttitor vitae. Nullam quis ex enim. Vestibulum magna ligula, pretium non nulla vitae, venenatis maximus turpis. Nullam tristique, dui vitae iaculis pulvinar, arcu dui scelerisque felis, nec commodo metus libero eget lorem. Sed cursus augue sed massa viverra fringilla. Maecenas in libero vel dui sollicitudin ornare. Nunc id neque eget nisl lacinia convallis. Curabitur id turpis euismod, tincidunt velit sed, sodales velit. </p>
             <iframe src="https://www.youtube.com/embed/dN5GbeXA8Ww" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96"></iframe>
         </div>
         <div class="lg:w-full p-4 transitiontopY5 lg:flex m-auto lg:justify-center items-center bg-gray-50">
@@ -69,10 +105,10 @@
                 <img src="./img/logo_hopital_arles.png" alt="Logo du centre hospitalier d'arles" class="m-4">
                 <img src="./img/pms_arles.png" alt="logo du pôle médico-sportif d'arles" class="m-4">
             </div>
-            <p class="my-4 m-auto lg:m-8 lg:w-5/12">De ce rapprochement est né un partenariat solide et une application très performante : <strong>HYVIREA</strong>, testée sur des patients en bloc opératoire sous anesthésie loco-régionale. Avec l’accélération de la propagation du virus au début d’automne 2020, ce système opérationnel depuis plusieurs semaines à l’hôpital d’Arles, est un outil supplémentaire pour éviter les déprogrammations et reports d'interventions. Les services ambulatoires vont pouvoir être fluidifiés et nous attendons les supports renforcés de l’ARS (Agence régionale de la santé) PACA pour étendre ce dispositif à d’autres établissements de la région.</p>
+            <p class="my-4 m-auto lg:m-8 lg:w-5/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac efficitur nisi. Mauris convallis mattis leo, eget dignissim justo pulvinar eget. Quisque placerat vitae libero sed ultricies. Vestibulum lobortis porta enim, in maximus ligula aliquam non. Maecenas nec nisi eget ipsum tincidunt hendrerit non eu neque. Sed suscipit suscipit quam, vel euismod tellus porttitor vitae. Nullam quis ex enim. Vestibulum magna ligula, pretium non nulla vitae, venenatis maximus turpis. Nullam tristique, dui vitae iaculis pulvinar, arcu dui scelerisque felis, nec commodo metus libero eget lorem. Sed cursus augue sed massa viverra fringilla. Maecenas in libero vel dui sollicitudin ornare. Nunc id neque eget nisl lacinia convallis. Curabitur id turpis euismod, tincidunt velit sed, sodales velit.</p>
         </div>
         <div class="lg:w-full p-4 transitiontopY5 lg:flex m-auto lg:justify-center items-center ">
-            <p class="my-4 m-auto lg:m-8 lg:w-5/12">L’utilisateur plonge dans un univers inconnu, à bord d’une barque traversant une grotte et se laissant porter lentement sur un lac qui aboutit par la suite sur une plage. Autour se trouvent des hippocampes, champignons géants, cristaux luminescents et autres objets et créatures surprenantes.</p>
+            <p class="my-4 m-auto lg:m-8 lg:w-5/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac efficitur nisi. Mauris convallis mattis leo, eget dignissim justo pulvinar eget. Quisque placerat vitae libero sed ultricies. Vestibulum lobortis porta enim, in maximus ligula aliquam non. Maecenas nec nisi eget ipsum tincidunt hendrerit non eu neque. Sed suscipit suscipit quam, vel euismod tellus porttitor vitae. Nullam quis ex enim. Vestibulum magna ligula, pretium non nulla vitae, venenatis maximus turpis. Nullam tristique, dui vitae iaculis pulvinar, arcu dui scelerisque felis, nec commodo metus libero eget lorem. Sed cursus augue sed massa viverra fringilla. Maecenas in libero vel dui sollicitudin ornare. Nunc id neque eget nisl lacinia convallis. Curabitur id turpis euismod, tincidunt velit sed, sodales velit.</p>
             <div class="my-4 m-auto w-11/12 lg:m-8 lg:w-5/12 flex-wrap flex w-full justify-center">
                 <a href="html/photo1.html" rel="noopener" class="m-4 h-40 w-11/12 lg:w-5/12" target="_blank"><img src="./img/imgcompresse/Plage.png" class="h-full w-full bg-red-300 object-cover" alt="photo d'un environnement dans l'application représentant une plage"></a>
                 <a href="html/photo2.html" rel="noopener" class="m-4 h-40 w-11/12 lg:w-5/12" target="_blank"><img src="./img/imgcompresse/Salle01.png" class="h-full w-full bg-red-300 object-cover" alt="photo d'un environnement dans l'application réprésentant un lac dans une grotte"></a>
@@ -82,8 +118,8 @@
         </div>
 
         <div class="lg:w-full p-4 transitiontopY6 flex flex-col m-auto lg:justify-center items-center bg-gray-50">
-            <h2 class="text-2xl p-4 text-center">De nouveaux scénarios en cours de développement !</h2>
-            <p class="my-4 m-auto lg:w-8/12">Afin d'enrichir l'application, l'équipe de développement travaille actuellement sur d'autres scénario dans le but de diversifier son champ d'action afin de correspondre à un plus large public. Vous pouvez retrouver le teaser du dernier scénario en developpement ci-dessous :</p>
+            <h2 class="text-2xl p-4 text-center">Lorem ipsum dolor sit amet</h2>
+            <p class="my-4 m-auto lg:w-8/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac efficitur nisi. Mauris convallis mattis leo, eget dignissim justo pulvinar eget. Quisque placerat vitae libero sed ultricies. Vestibulum lobortis porta enim, in maximus ligula aliquam non. Maecenas nec nisi eget ipsum tincidunt hendrerit non eu neque. Sed suscipit suscipit quam, vel euismod tellus porttitor vitae. Nullam quis ex enim. Vestibulum magna ligula, pretium non nulla vitae, venenatis maximus turpis. Nullam tristique, dui vitae iaculis pulvinar, arcu dui scelerisque felis, nec commodo metus libero eget lorem. Sed cursus augue sed massa viverra fringilla. Maecenas in libero vel dui sollicitudin ornare. Nunc id neque eget nisl lacinia convallis. Curabitur id turpis euismod, tincidunt velit sed, sodales velit.</p>
             <iframe src="https://www.youtube.com/embed/O8KIbiTpXzY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96"></iframe>
         </div>
     </main>
