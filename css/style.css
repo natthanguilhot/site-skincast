@@ -8,6 +8,10 @@ body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-family: "Orbitron", Arial, Helvetica, sans-serif;
+}
+
 main:hover > .barsection {
   transform: scaleX(1);
   transform-origin: left;
@@ -31,10 +35,6 @@ main:hover > .barsection {
     transform: scaleX(1);
     animation: transitiontopY 0.4s;
   }
-}
-
-.bg-hb {
-  background: #133165;
 }
 
 .transitiontopY1 {

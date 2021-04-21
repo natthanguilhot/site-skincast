@@ -22,9 +22,7 @@ main {
       animation: transitiontopY $transdura;
     }  
 }
-.bg-hb {
-    background: lighten($bg-hb, 10);
-}
+
 @for $i from 1 through 6 {
     .transitiontopY#{$i} {
       animation: transitiontopY $transdura;
