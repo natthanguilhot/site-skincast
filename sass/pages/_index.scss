@@ -5,16 +5,19 @@
 }
 body {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  background-color: #5784BA!important;
+  background-color: $main-blue;
+}
+footer {
+  background-color: $main-blue;
 }
 h1 {
   font-family: 'Orbitron', Arial, Helvetica, sans-serif;
 }
-.secondary-bg-color {
-  background-color: $secondary-bg-color;
+.bg-grad {
+  background: linear-gradient(to top, #FECACA, $main-blue);
 }
-.header-bg {
-  background: linear-gradient(to bottom, #84A6D6, #5784BA);
+.bg-grad-footer {
+  background: linear-gradient(to bottom, #FECACA , $main-blue);
 }
 main {
     &:hover > .barsection {

@@ -6,19 +6,23 @@
 
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  background-color: #5784BA !important;
+  background-color: #5784BA;
+}
+
+footer {
+  background-color: #5784BA;
 }
 
 h1 {
   font-family: "Orbitron", Arial, Helvetica, sans-serif;
 }
 
-.secondary-bg-color {
-  background-color: #84A6D6;
+.bg-grad {
+  background: linear-gradient(to top, #FECACA, #5784BA);
 }
 
-.header-bg {
-  background: linear-gradient(to bottom, #84A6D6, #5784BA);
+.bg-grad-footer {
+  background: linear-gradient(to bottom, #FECACA, #5784BA);
 }
 
 main:hover > .barsection {
