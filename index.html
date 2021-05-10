@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">    
-    <title>SkinCasts - Attelle 3D sur mesure</title>
+    <title>Skincasts - Attelles imprimé en 3D sur mesure</title>
     <link rel="icon" href="./img/Icon.ico" type="image/x-icon">
     <meta name="description" content="SkinCasts fabrique des attelles à l'aide d'imprimante 3D. Grâce à l'impression 3D, nous pouvons créer des attelles uniques qui vont parfaitement s'adapter aux besoins du patient.">
     <meta name="robots" content="follow, index">
@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/tailwind.css">
+    <script src="js/script.js" defer ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- ajout des fonts -->
@@ -31,65 +32,77 @@
 </head>
 <body class="text-white">
 
-    <header class="h-96 w-full lg:flex justify-between mb-4">
+    <header class="h-96 w-full lg:flex justify-center mb-4">
         <div class="w-full flex flex-col justify-around items-center">
-            <div class="flex justify-center items-center lg:p-8 mt-4">
+            <div class="flex justify-center items-center lg:p-8 mt-4 opacity-0">
                 <h1 class="text-5xl lg:text-8xl">Skincasts</h1><i class="fas fa-hand-holding-medical h-full text-3xl lg:text-5xl ml-4 lg:mt-10"></i>
             </div>
-            <div class="w-full">
-                <p class="p-4 w-8/12 m-auto lg:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac efficitur nisi. Mauris convallis mattis leo, eget dignissim justo pulvinar eget.</p>
+            <div class="w-full opacity-0">
+                <p class="p-4 w-8/12 m-auto lg:text-3xl">Une <strong class="font-normal">attelle</strong> conçu pour s'adapter à votre morphologie, <span class="font-semibold underline">conçu pour vous.</span></p>
             </div>
         </div>
-        <div class="w-full flex justify-center items-center p-4">
-            <img src="./img/hand-117210_1280.png" alt="Attelle skincast imprimé en 3D" class="max-h-60 md:h-96 w-3/12 md:w-3/12 m-auto">
-        </div>
+        <div class="button3d h-40 w-full m-auto">
+            <div class="btn3d h-auto w-auto">
+              <div class="btn__flip">
+                <div class="btn__flip--off">            
+                    <img src="./img/hand-117210_1280.png" alt="" class="max-h-60 md:h-96 w-8/12 md:w-3/12 m-auto">
+                </div>
+                <div class="btn__flip--on">            
+                    <img src="./img/hand-117210_1280.png" alt="" class="max-h-60 md:h-96 w-8/12 md:w-3/12 m-auto">
+                </div>
+                <div class="btn__flip--off1">            
+                    <img src="./img/hand-117210_1280.png" alt="" class="max-h-60 md:h-96 w-8/12 md:w-3/12 m-auto">
+                </div>
+                <div class="btn__flip--on1">            
+                    <img src="./img/hand-117210_1280.png" alt="" class="max-h-60 md:h-96 w-8/12 md:w-3/12 m-auto">
+                </div>
+              </div>
+            </div>
+          </div>
     </header>
     
-    <main class="leading-7">
-        <h2 class="flex justify-center text-3xl bold p-8 transitiontopY1 text-center">Skincasts - Une attelle d'un nouveau genre</h2>
-        <div class="barsection h-1 w-8/12 bg-hb rounded-2xl m-auto"></div>
-        <div class="lg:w-full p-4 transitiontopY2 lg:flex m-auto lg:justify-center items-center">
-            <div class="w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96 flex justify-center items-center bg-black">img ou vidéo de fabrication</div>   
-            <p class="m-auto my-4 lg:m-8 lg:w-5/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac efficitur nisi. Mauris convallis mattis leo, eget dignissim justo pulvinar eget. Quisque placerat vitae libero sed ultricies. Vestibulum lobortis porta enim, in maximus ligula aliquam non. Maecenas nec nisi eget ipsum tincidunt hendrerit non eu neque. Sed suscipit suscipit quam, vel euismod tellus porttitor vitae. Nullam quis ex enim. Vestibulum magna ligula, pretium non nulla vitae, venenatis maximus turpis. Nullam tristique, dui vitae iaculis pulvinar, arcu dui scelerisque felis, nec commodo metus libero eget lorem. Sed cursus augue sed massa viverra fringilla. Maecenas in libero vel dui sollicitudin ornare. Nunc id neque eget nisl lacinia convallis. Curabitur id turpis euismod, tincidunt velit sed, sodales velit.</p>
+    <main class="leading-7 text-lg">
+        <h2 class="flex justify-center text-3xl bold p-8 text-center opacity-0">Skincasts - Une attelle d'un nouveau genre</h2>
+        <div class="lg:w-full p-4 lg:flex m-auto lg:justify-center items-center">
+            <img src="./img/impression_3D.jpg" alt="Imprimante 3D qui imprime" class="w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96 flex justify-center items-center bg-black opacity-0 object-cover object-center">
+            <p class="m-auto my-4 lg:m-8 lg:w-5/12 opacity-0">Fabriqué à l'aide d'acide polylactique (PLA) qui est un polymère biodégradable obtenu à partir d'amidon de maïs, les <strong>attelles Skincasts</strong> sont respectueuse de l'environnement. De plus, ce matériau offre une résistance à la traction comprise entre 50 et 70 MPa (500 à 700 bar).</p>
         </div>
-        <div class="w-full m-auto py-8 transitiontopY3 flex flex-col border-red-200 shadow-inner">
-            <p class="w-11/12 lg:w-10/12 m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac efficitur nisi. Mauris convallis mattis leo, eget dignissim justo pulvinar eget. Quisque placerat vitae libero sed ultricies. Vestibulum lobortis porta enim, in maximus ligula aliquam non. Maecenas nec nisi eget ipsum tincidunt hendrerit non eu neque. Sed suscipit suscipit quam, vel euismod tellus porttitor vitae. Nullam quis ex enim. Vestibulum magna ligula, pretium non nulla vitae, venenatis maximus turpis. Nullam tristique, dui vitae iaculis pulvinar, arcu dui scelerisque felis, nec commodo metus libero eget lorem. Sed cursus augue sed massa viverra fringilla. Maecenas in libero vel dui sollicitudin ornare. Nunc id neque eget nisl lacinia convallis. Curabitur id turpis euismod, tincidunt velit sed, sodales velit.</p>
+        <div class="w-full m-auto py-8 flex flex-col">
+            <p class="w-11/12 lg:w-10/12 m-auto opacity-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac efficitur nisi. Mauris convallis mattis leo, eget dignissim justo pulvinar eget. Quisque placerat vitae libero sed ultricies. Vestibulum lobortis porta enim, in maximus ligula aliquam non. Maecenas nec nisi eget ipsum tincidunt hendrerit non eu neque. Sed suscipit suscipit quam, vel euismod tellus porttitor vitae. Nullam quis ex enim. Vestibulum magna ligula, pretium non nulla vitae, venenatis maximus turpis. Nullam tristique, dui vitae iaculis pulvinar, arcu dui scelerisque felis, nec commodo metus libero eget lorem. Sed cursus augue sed massa viverra fringilla. Maecenas in libero vel dui sollicitudin ornare. Nunc id neque eget nisl lacinia convallis. Curabitur id turpis euismod, tincidunt velit sed, sodales velit.</p>
         </div>
-        <div class="bg-grad">
-            <div class="lg:w-full p-4 transitiontopY4 flex m-auto lg:justify-center items-center flex-col-reverse lg:flex-row">
-                <p class="my-4 m-auto lg:m-8 lg:w-5/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac efficitur nisi. Mauris convallis mattis leo, eget dignissim justo pulvinar eget. Quisque placerat vitae libero sed ultricies. Vestibulum lobortis porta enim, in maximus ligula aliquam non. Maecenas nec nisi eget ipsum tincidunt hendrerit non eu neque. Sed suscipit suscipit quam, vel euismod tellus porttitor vitae. Nullam quis ex enim. Vestibulum magna ligula, pretium non nulla vitae, venenatis maximus turpis. Nullam tristique, dui vitae iaculis pulvinar, arcu dui scelerisque felis, nec commodo metus libero eget lorem. Sed cursus augue sed massa viverra fringilla. Maecenas in libero vel dui sollicitudin ornare. Nunc id neque eget nisl lacinia convallis. Curabitur id turpis euismod, tincidunt velit sed, sodales velit. </p>
-                <div class="w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96 flex justify-center items-center bg-black">img ou vidéo de fabrication</div>
-            </div>
+        <div class="lg:w-full p-4 flex m-auto lg:justify-center items-center flex-col-reverse lg:flex-row">
+            <p class="my-4 m-auto lg:m-8 lg:w-5/12 opacity-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac efficitur nisi. Mauris convallis mattis leo, eget dignissim justo pulvinar eget. Quisque placerat vitae libero sed ultricies. Vestibulum lobortis porta enim, in maximus ligula aliquam non. Maecenas nec nisi eget ipsum tincidunt hendrerit non eu neque. Sed suscipit suscipit quam, vel euismod tellus porttitor vitae. Nullam quis ex enim. Vestibulum magna ligula, pretium non nulla vitae, venenatis maximus turpis. Nullam tristique, dui vitae iaculis pulvinar, arcu dui scelerisque felis, nec commodo metus libero eget lorem. Sed cursus augue sed massa viverra fringilla. Maecenas in libero vel dui sollicitudin ornare. Nunc id neque eget nisl lacinia convallis. Curabitur id turpis euismod, tincidunt velit sed, sodales velit. </p>
+            <img src="./img/fonctionnement_imprimante.png" alt="Dessin expliquant le fonctionnement d'une impression" class="w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96 flex justify-center items-center opacity-0 object-cover object-center">
         </div>
-        <div class="lg:w-full p-4 transitiontopY5 lg:flex m-auto lg:justify-center items-center text-black bg-red-200">
-            <div class="w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96 flex justify-center items-center bg-black">img ou vidéo de fabrication</div>   
-            <p class="my-4 m-auto lg:m-8 lg:w-5/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac efficitur nisi. Mauris convallis mattis leo, eget dignissim justo pulvinar eget. Quisque placerat vitae libero sed ultricies. Vestibulum lobortis porta enim, in maximus ligula aliquam non. Maecenas nec nisi eget ipsum tincidunt hendrerit non eu neque. Sed suscipit suscipit quam, vel euismod tellus porttitor vitae. Nullam quis ex enim. Vestibulum magna ligula, pretium non nulla vitae, venenatis maximus turpis. Nullam tristique, dui vitae iaculis pulvinar, arcu dui scelerisque felis, nec commodo metus libero eget lorem. Sed cursus augue sed massa viverra fringilla. Maecenas in libero vel dui sollicitudin ornare. Nunc id neque eget nisl lacinia convallis. Curabitur id turpis euismod, tincidunt velit sed, sodales velit.</p>
+        <div class="lg:w-full p-4 lg:flex m-auto lg:justify-center items-center">
+            <div class="w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96 flex justify-center items-center bg-black opacity-0">img ou vidéo de fabrication</div>   
+            <p class="my-4 m-auto lg:m-8 lg:w-5/12 opacity-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac efficitur nisi. Mauris convallis mattis leo, eget dignissim justo pulvinar eget. Quisque placerat vitae libero sed ultricies. Vestibulum lobortis porta enim, in maximus ligula aliquam non. Maecenas nec nisi eget ipsum tincidunt hendrerit non eu neque. Sed suscipit suscipit quam, vel euismod tellus porttitor vitae. Nullam quis ex enim. Vestibulum magna ligula, pretium non nulla vitae, venenatis maximus turpis. Nullam tristique, dui vitae iaculis pulvinar, arcu dui scelerisque felis, nec commodo metus libero eget lorem. Sed cursus augue sed massa viverra fringilla. Maecenas in libero vel dui sollicitudin ornare. Nunc id neque eget nisl lacinia convallis. Curabitur id turpis euismod, tincidunt velit sed, sodales velit.</p>
         </div>
-        <div class="lg:w-full p-4 transitiontopY5 lg:flex m-auto lg:justify-center items-center bg-red-200 text-black">
-            <p class="my-4 m-auto lg:m-8 lg:w-5/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac efficitur nisi. Mauris convallis mattis leo, eget dignissim justo pulvinar eget. Quisque placerat vitae libero sed ultricies. Vestibulum lobortis porta enim, in maximus ligula aliquam non. Maecenas nec nisi eget ipsum tincidunt hendrerit non eu neque. Sed suscipit suscipit quam, vel euismod tellus porttitor vitae. Nullam quis ex enim. Vestibulum magna ligula, pretium non nulla vitae, venenatis maximus turpis. Nullam tristique, dui vitae iaculis pulvinar, arcu dui scelerisque felis, nec commodo metus libero eget lorem. Sed cursus augue sed massa viverra fringilla. Maecenas in libero vel dui sollicitudin ornare. Nunc id neque eget nisl lacinia convallis. Curabitur id turpis euismod, tincidunt velit sed, sodales velit.</p>
+        <div class="lg:w-full p-4 lg:flex m-auto lg:justify-center items-center">
+            <p class="my-4 m-auto lg:m-8 lg:w-5/12 opacity-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac efficitur nisi. Mauris convallis mattis leo, eget dignissim justo pulvinar eget. Quisque placerat vitae libero sed ultricies. Vestibulum lobortis porta enim, in maximus ligula aliquam non. Maecenas nec nisi eget ipsum tincidunt hendrerit non eu neque. Sed suscipit suscipit quam, vel euismod tellus porttitor vitae. Nullam quis ex enim. Vestibulum magna ligula, pretium non nulla vitae, venenatis maximus turpis. Nullam tristique, dui vitae iaculis pulvinar, arcu dui scelerisque felis, nec commodo metus libero eget lorem. Sed cursus augue sed massa viverra fringilla. Maecenas in libero vel dui sollicitudin ornare. Nunc id neque eget nisl lacinia convallis. Curabitur id turpis euismod, tincidunt velit sed, sodales velit.</p>
             <div class="my-4 m-auto w-11/12 lg:m-8 lg:w-5/12 flex-wrap flex w-full justify-center">
-                <a href="html/photo1.html" rel="noopener" class="m-4 h-40 w-11/12 lg:w-5/12" target="_blank"><img src="" class="h-full w-full bg-black object-cover" alt=""></a>
-                <a href="html/photo2.html" rel="noopener" class="m-4 h-40 w-11/12 lg:w-5/12" target="_blank"><img src="" class="h-full w-full bg-black object-cover" alt=""></a>
-                <a href="html/photo3.html" rel="noopener" class="m-4 h-40 w-11/12 lg:w-5/12" target="_blank"><img src="" class="h-full w-full bg-black object-cover" alt=""></a>
-                <a href="html/photo4.html" rel="noopener" class="m-4 h-40 w-11/12 lg:w-5/12" target="_blank"><img src="" class="h-full w-full bg-black object-cover" alt=""></a>
+                <a href="html/photo1.html" rel="noopener" class="m-4 h-40 w-11/12 lg:w-5/12 opacity-0" target="_blank"><img src="" class="h-full w-full bg-black object-cover" alt=""></a>
+                <a href="html/photo2.html" rel="noopener" class="m-4 h-40 w-11/12 lg:w-5/12 opacity-0" target="_blank"><img src="" class="h-full w-full bg-black object-cover" alt=""></a>
+                <a href="html/photo3.html" rel="noopener" class="m-4 h-40 w-11/12 lg:w-5/12 opacity-0" target="_blank"><img src="" class="h-full w-full bg-black object-cover" alt=""></a>
+                <a href="html/photo4.html" rel="noopener" class="m-4 h-40 w-11/12 lg:w-5/12 opacity-0" target="_blank"><img src="" class="h-full w-full bg-black object-cover" alt=""></a>
             </div>
         </div>
-        <div class="lg:w-full p-4 transitiontopY6 flex flex-col m-auto lg:justify-center items-center bg-grad-footer text-black">
-            <h2 class="text-2xl p-4 text-center">Lorem ipsum dolor sit amet</h2>
-            <p class="my-4 m-auto lg:w-8/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac efficitur nisi. Mauris convallis mattis leo, eget dignissim justo pulvinar eget. Quisque placerat vitae libero sed ultricies. Vestibulum lobortis porta enim, in maximus ligula aliquam non. Maecenas nec nisi eget ipsum tincidunt hendrerit non eu neque. Sed suscipit suscipit quam, vel euismod tellus porttitor vitae. Nullam quis ex enim. Vestibulum magna ligula, pretium non nulla vitae, venenatis maximus turpis. Nullam tristique, dui vitae iaculis pulvinar, arcu dui scelerisque felis, nec commodo metus libero eget lorem. Sed cursus augue sed massa viverra fringilla. Maecenas in libero vel dui sollicitudin ornare. Nunc id neque eget nisl lacinia convallis. Curabitur id turpis euismod, tincidunt velit sed, sodales velit.</p>
-            <div class="w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96 flex justify-center items-center bg-black">img ou vidéo de fabrication</div>   
+        <div class="lg:w-full p-4 flex flex-col m-auto lg:justify-center items-center">
+            <h2 class="text-2xl p-4 text-center opacity-0">Lorem ipsum dolor sit amet</h2>
+            <p class="my-4 m-auto lg:w-8/12 opacity-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac efficitur nisi. Mauris convallis mattis leo, eget dignissim justo pulvinar eget. Quisque placerat vitae libero sed ultricies. Vestibulum lobortis porta enim, in maximus ligula aliquam non. Maecenas nec nisi eget ipsum tincidunt hendrerit non eu neque. Sed suscipit suscipit quam, vel euismod tellus porttitor vitae. Nullam quis ex enim. Vestibulum magna ligula, pretium non nulla vitae, venenatis maximus turpis. Nullam tristique, dui vitae iaculis pulvinar, arcu dui scelerisque felis, nec commodo metus libero eget lorem. Sed cursus augue sed massa viverra fringilla. Maecenas in libero vel dui sollicitudin ornare. Nunc id neque eget nisl lacinia convallis. Curabitur id turpis euismod, tincidunt velit sed, sodales velit.</p>
+            <div class="w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96 flex justify-center items-center bg-black opacity-0">img ou vidéo de fabrication</div>   
         </div>
     </main>
 
-    <footer class="flex flex-col justify-center items-center relative">
+    <footer class="bg-footer flex flex-col justify-center items-center relative bg-blue-900">
         <div class="w-full h-full flex flex-col justify-center items-center pt-8 z-20 text-white">
-            <h2 class="text-3xl">Contact <i class="fas fa-id-card-alt"></i></h2>
+            <h2 class="text-3xl">Contact</h2>
             <address class="my-8 not-italic">
             <ul class="flex flex-col justify-around items-center mb-4">
                 <li class="text-2xl">VRtig.0</li>
-                <li><i class="fas fa-phone-alt"></i> <a href="tel:0607884632" class="underline hover:bg-red-200 hover:text-black">Tél : 06 07 88 46 32</a></li>
-                <li><i class="fas fa-envelope"></i> <a href="mailto:alain.chaix@vrtig0.fr" class="underline hover:bg-red-200 hover:text-black">Mail : alain.chaix@vrtig0.fr</a></li>
-                <li><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.fr/maps/place/3+Rue+Yvan+Audouard+B%C3%A2timent+E107,+13200+Arles/@43.6734367,4.636591,17z/data=!3m1!4b1!4m5!3m4!1s0x12b67673e66f2afb:0xb7da5c06ab985cb4!8m2!3d43.6734328!4d4.6387797" class="underline hover:bg-red-200 hover:text-black" target="_blank" rel=noopener>Adresse studio : 3 rue Yvan Audouard Bâtiment E107 - 13520 Arles</a></li>
+                <li class="group"><i class="fas fa-phone-alt group-hover:text-yellow-500"></i> <a href="tel:0607884632" class="group-hover:text-yellow-500 underline">06 07 88 46 32</a></li>
+                <li class="group"><i class="fas fa-envelope group-hover:text-yellow-500"></i> <a href="mailto:alain.chaix@vrtig0.fr" class="group-hover:text-yellow-500 underline">alain.chaix@vrtig0.fr</a></li>
+                <li class="group"><i class="fas fa-map-marker-alt group-hover:text-yellow-500"></i> <a href="https://www.google.fr/maps/place/3+Rue+Yvan+Audouard+B%C3%A2timent+E107,+13400+Arles/@43.6734367,4.636591,17z/data=!3m1!4b1!4m5!3m4!1s0x12b67673e66f2afb:0xb7da5c06ab985cb4!8m2!3d43.6734328!4d4.6387797" class="group-hover:text-yellow-500 underline" target="_blank" rel=noopener>3 rue Yvan Audouard Bâtiment E107 - 13520 Arles</a></li>
             </ul>
             </address>
         </div>
