@@ -6,7 +6,10 @@
 
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  background-color: #5784BA;
+}
+
+.bg-main {
+  background-color: #1f3958;
 }
 
 h1 {
@@ -57,6 +60,22 @@ iframe {
   margin: auto;
 }
 
+.bg-lightgreen {
+  background-color: #9DC88D;
+}
+
+.bg-deepred {
+  background-color: #932432;
+}
+
+.bg-blueminded {
+  background-color: #004E7C;
+}
+
+.bg-gray-main {
+  background-color: #111827;
+}
+
 .button3d {
   width: 75%;
   display: flex;
@@ -89,7 +108,7 @@ iframe {
   align-items: center;
   transform-style: preserve-3d;
   transform-origin: bottom 5vw;
-  transition: transform 5s linear;
+  transition: transform 10s linear;
   transform: rotateY(0deg);
 }
 .button3d .btn3d .btn__flip .btn__flip--off {
