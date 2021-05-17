@@ -9,20 +9,20 @@
     <link rel="canonical" href="https://www.skincasts.fr/"/>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/tailwind.css">
-    <script src="js/script.js" defer ></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <!-- ajout des fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap" rel="stylesheet">
     <!-- Fin ajout des fonts -->
 
     <!-- Elements affiché lors d'un partage  -->
     <!-- <meta property="og:image" content=""> Mettre une icône/image au lien qui sont partagé -->
-    <meta property="og:description" content="SkinCasts fabrique des attelles à l'aide d'imprimante 3D. Grâce à l'impression 3D, nous pouvons créer des attelles uniques qui vont parfaitement s'adapter aux besoins du patient.">
-    <meta property="og:title" content="SkinCasts - Attelle sur mesure">
-    <meta name="twitter:title" content="SkinCasts - Attelle sur mesure">
+    <meta property="og:description" content="Skincasts fabrique des attelles à l'aide d'imprimante 3D. Grâce à l'impression 3D, nous pouvons créer des attelles uniques qui vont parfaitement s'adapter aux besoins et à la morphologie du patient.">
+    <meta property="og:title" content="Skincasts - Attelles imprimé en 3D sur mesure">
+    <meta name="twitter:title" content="Skincasts - Attelles imprimé en 3D sur mesure">
     <!-- Fin élements affiché lors d'un partage -->
 
     <!-- Fontawesome (icone) -->
@@ -32,68 +32,56 @@
 </head>
 <body class="text-white m-auto bg-gray-900">
 
-    <header class="h-auto w-full lg:flex justify-center mb-4">
+    <header class="h-auto w-full lg:flex justify-center mb-4 max-w-screen-xl m-auto">
         <div class="w-full flex flex-col justify-around items-center">
             <div class="flex justify-center items-center lg:p-8 mt-4 opacity-0">
-                <h1 class="text-5xl lg:text-8xl">Skincasts</h1><i class="fas fa-hand-holding-medical h-full text-3xl lg:text-5xl ml-4 lg:mt-10"></i>
+                <h1 class="text-5xl lg:text-8xl">Skincasts</h1>
             </div>
             <div class="w-full opacity-0">
                 <p class="p-4 w-11/12 m-auto text-xl lg:text-3xl lg:w-8/12 max-w-sm">Une <strong class="font-normal">attelle</strong> conçu pour s'adapter à votre morphologie, <span class="font-semibold underline">conçu pour vous.</span></p>
             </div>
         </div>
-        <!--  -->
-        <!-- <div class="button3d h-40 w-full m-auto">
-            <div class="btn3d h-auto w-auto">
-              <div class="btn__flip">
-                <div class="btn__flip--off">            
-                    <img src="./img/hand-117210_1280.png" alt="" class="max-h-60 md:h-96 w-8/12 md:w-3/12 m-auto bg-gray-main">
-                </div>
-                <div class="btn__flip--on">            
-                    <img src="./img/impression_3D.jpg" alt="" class="max-h-60 md:h-96 w-8/12 md:w-3/12 m-auto bg-gray-main">
-                </div>
-                <div class="btn__flip--off1">            
-                    <img src="./img/fonctionnement_imprimante.png" alt="" class="max-h-60 md:h-96 w-8/12 md:w-3/12 m-auto bg-gray-main">
-                </div>
-                <div class="btn__flip--on1">            
-                    <img src="./img/hand-117210_1280.png" alt="" class="max-h-60 md:h-96 w-8/12 md:w-3/12 m-auto bg-gray-main">
-                </div>
-              </div>
-            </div>
-        </div> -->
+        <div class="w-full flex justify-center items-center">
+            <img src="./img/attelle_presentaion.jpg" class="max-h-96 w-48 p-4" alt="Attelle skincasts">
+        </div>
     </header>
     
     <main class="leading-7 text-lg">
         <h2 class="flex justify-center text-3xl lg:text-5xl bold p-8 text-center opacity-0">Skincasts - Une attelle d'un nouveau genre</h2>
-        <div class="lg:w-full p-4 lg:flex m-auto lg:justify-center items-center">
-            <img src="./img/impression_3D.jpg" alt="Imprimante 3D qui imprime" class="w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96 flex justify-center items-center bg-black opacity-0 object-cover object-center rounded">
-            <p class="m-auto my-4 lg:m-8 lg:w-5/12 opacity-0">Fabriqué à l'aide d'acide polylactique (PLA) qui est un polymère biodégradable obtenu à partir d'amidon de maïs, les <strong>attelles Skincasts</strong> sont <strong>respectueuse de l'environnement</strong>. De plus, ce matériau offre une <strong>résistance</strong> à la traction comprise entre 50 et 70 MPa (500 à 700 bar) tout en gardant une <strong>imperméabilité</strong>, un maintien du membre adéquate pour un <strong>poid très faible</strong>. Pour répondre à la demande d'un patient dans un délai assez court, nous avons un procéssus de fabrication très spécial.</p>
+        <div class="lg:w-full p-4 lg:flex m-auto lg:justify-center items-center max-w-screen-xl">
+            <img src="./img/img_impression3D.jpg" alt="Imprimante 3D qui imprime" class="w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96 flex justify-center items-center bg-black opacity-0 object-cover object-center rounded">
+            <p class="m-auto my-4 lg:m-8 lg:w-5/12 opacity-0">Fabriquées grâce aux <strong>imprimantes 3Ds</strong> avec de l'acide polylactique (PLA) qui est un polymère biodégradable obtenu à partir d'amidon de maïs, les <strong>attelles Skincasts</strong> sont <strong>respectueuses de l'environnement</strong> et solide. En effet, ce matériau offre une <strong>résistance</strong> à la traction comprise entre 50 et 70 Mpa (500 à 700 bars) tout en gardant une <strong>imperméabilité</strong>, un <strong>maintien du membre</strong> adéquat pour un <strong>poids très faible</strong>. Pour répondre à la demande d'un patient dans un délai assez court, nous avons un processus de fabrication très spécial.</p>
         </div>
         <div class="bg-gray-800">
             <h2 class="w-full m-auto opacity-0 text-center text-2xl font-semibold underline py-4">Le processus de fabrication <i class="fas fa-pencil-ruler"></i></h2>
         </div>
-        <div class="lg:w-full p-4 flex m-auto lg:justify-center items-center flex-col-reverse lg:flex-row bg-gray-800">
-            <p class="my-4 m-auto lg:m-8 lg:w-5/12 opacity-0">Dans un premier temps, la demande d'impression vient du praticien. Le praticien en charge du patient est muni d’une <strong>tablette qui permet de scanner</strong> la partie du corps de la zone atteinte. De la, le scan est envoyé à notre équipe qui se charge d'<strong>importer le scan</strong> sur nos logiciels pour le travailler. L’attelle est ensuite créée et adaptée au scan du patient dans le but d’être <strong>parfaitement sur mesure</strong> pour un confort essentiel. Ensuite, l’impression 3D débute. Une fois terminée, l’attelle est expédiée pour que le praticien puisse la poser sur le patient. Le <strong>processus au complet est de 4h00</strong> en moyenne (cela varie en fonction de la taille des attelles).</p>
-            <img src="./img/fonctionnement_imprimante.png" alt="Dessin expliquant le fonctionnement d'une impression" class="w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96 flex justify-center items-center opacity-0 object-cover object-center">
+        <div class="w-full h-auto bg-gray-800">
+            <div class="max-w-screen-xl lg:w-full p-4 flex m-auto lg:justify-center items-center flex-col-reverse lg:flex-row bg-gray-800">
+                <p class="my-4 m-auto lg:m-8 lg:w-5/12 opacity-0">Dans un premier temps, la demande d'impression vient du praticien. Le praticien en charge du patient est muni d’une <strong>tablette qui permet de scanner</strong> la partie du corps de la zone atteinte. De là, le scan est envoyé à notre équipe qui se charge d'<strong>importer le scan</strong> sur nos logiciels pour le travailler. L’attelle est ensuite créée et adaptée au scan du patient dans le but d’être <strong>parfaitement sur mesure</strong> pour un confort essentiel. Ensuite, l’impression 3D débute. Une fois terminée, l’attelle est expédiée pour que le praticien puisse la poser sur le patient. Le <strong>processus au complet est de 4h00</strong> en moyenne (cela varie en fonction de la taille des attelles).</p>
+                <img src="./img/fonctionnement_imprimante.png" alt="Dessin expliquant le fonctionnement d'une impression" class="w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96 flex justify-center items-center opacity-0 object-cover object-center">
+            </div>
         </div>
         <div class="flex justify-center items-center h-auto w-full py-8 bg-gray-800">
             <figure class="flex flex-col justify-center items-center opacity-0 md:w-11/12 lg:w-5/12">
-                <img title="Exemple d'une attelle skincasts posé" src="./img/attelle_pose.jpeg" alt="Photo d'une attelle posé" class="object-cover object-center rounded w-11/12 h-96 md:h-96 md:w-8/12 max-w-screen-sm">
+                <img title="Exemple d'une attelle skincasts posé" src="./img/attelle_pose.jpeg" alt="Photo d'une attelle posé" class="object-cover object-center rounded w-11/12 h-96 md:h-72  md:w-8/12 max-w-screen-sm">
                 <figcaption class="text-center mt-2">Exemple d'une attelle Skincasts posé</figcaption>
             </figure>
         </div>
-        <div class="lg:w-full lg:flex m-auto lg:justify-center items-center">
-            <div class="my-4 m-auto w-11/12 lg:m-8 lg:w-5/12 flex-wrap flex justify-center">
-                <figure class="my-4 m-auto w-full w-11/12 lg:m-8 flex-wrap flex justify-center border rounded p-2 bg-gray-800">
-                    <img src="./img/bobineverte.jpg" class="h-40 w-full md:w-5/12 bg-lightgreen object-cover object-center p-2 rounded m-2 max-w-sm opacity-0" alt="Bobine de PLA vert clair">
-                    <img src="./img/bobinerouge.jpg" class="h-40 w-full md:w-5/12 bg-deepred object-cover object-center p-2 rounded m-2 max-w-sm opacity-0" alt="Bobine de PLA rouge">
-                    <img src="./img/bobinegrise.jpg" class="h-40 w-full md:w-5/12 bg-gray-500 object-cover object-center p-2 rounded m-2 max-w-sm opacity-0" alt="Bobine de PLA gris">
-                    <img src="./img/bobineblanche.jpg" class="h-40 w-full md:w-5/12 bg-white object-cover object-center p-2 rounded m-2 max-w-sm opacity-0" alt="Bobine de PLA blanc">
-                    <figcaption class="opacity-0">Bobine de PLA dans différentes coloris</figcaption>
-                </figure>
+        <div class="w-full">
+            <div class="max-w-screen-xl lg:w-full lg:flex m-auto lg:justify-center items-center">
+                <div class="my-4 m-auto w-11/12 lg:m-8 lg:w-10/12 xl:w-9/12 flex-wrap flex justify-center max-w-screen-md">
+                    <figure class="my-4 m-auto w-full w-11/12 lg:m-8 flex-wrap flex justify-center border rounded p-2 bg-gray-800 max-w-screen-lg">
+                        <img src="./img/bobineverte.jpg" class="h-30 w-full md:w-4/12 bg-lightgreen object-cover object-center p-2 rounded m-2 max-w-sm opacity-0" alt="Bobine de PLA vert clair">
+                        <img src="./img/bobinerouge.jpg" class="h-30 w-full md:w-4/12 bg-deepred object-cover object-center p-2 rounded m-2 max-w-sm opacity-0" alt="Bobine de PLA rouge">
+                        <img src="./img/bobinegrise.jpg" class="h-30 w-full md:w-4/12 bg-gray-500 object-cover object-center p-2 rounded m-2 max-w-sm opacity-0" alt="Bobine de PLA gris">
+                        <img src="./img/bobineblanche.jpg" class="h-30 w-full md:w-4/12 bg-gray-main object-cover object-center p-2 rounded m-2 max-w-sm opacity-0" alt="Bobine de PLA blanc">
+                        <figcaption class="opacity-0">Bobine de PLA dans différents coloris</figcaption>
+                    </figure>
+                </div>
+                <p class="my-4 m-auto lg:m-8 lg:w-8/12 opacity-0 w-11/12">Afin de pousser la personnalisation et de répondre aux envies du patient, nous proposons d'imprimer nos attelles dans différent coloris <i class="fas fa-swatchbook"></i>. (Sachez qu'il existe énormément d'autres couleurs de PLA que celles présenté ici)</p>
             </div>
-            <p class="my-4 m-auto lg:m-8 lg:w-5/12 opacity-0">Afin de pousser la personnalisation et de répondre aux envies du patient, nous proposons d'imprimer nos attelles dans différent coloris <i class="fas fa-swatchbook"></i>. (Sachez qu'il existe énormement d'autres couleurs de PLA)</p>
         </div>
-        <div class="lg:w-full p-4 flex flex-col m-auto lg:justify-center items-center">
+        <div class="lg:w-full p-4 flex flex-col m-auto lg:justify-center items-center max-w-screen-xl">
             <h2 class="text-2xl p-4 text-center opacity-0">Nous travaillons aussi sur des modèles de bottes</h2>
             <p class="my-4 m-auto lg:w-8/12 opacity-0">Pour de répondre à toutes type de fractures, nous travaillons sur d'autre type d'attelle. Notament les bottes etc...</p>
             <div class="w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96 flex justify-center items-center bg-black opacity-0">vidéo d'impression d'une botte</div>   
@@ -102,12 +90,12 @@
 
     <footer class="bg-footer flex flex-col justify-center items-center relative bg-transparent py-4 bg-gray-800">
         <div class="w-full h-full flex flex-col justify-center items-center pt-8 z-20 text-white max-w-md p-4 rounded-md">
-            <h2 class="text-3xl">Contact</h2>
+            <h2 class="text-3xl">Contact <i class="fas fa-id-card-alt"></i></h2>
             <address class="my-8 not-italic">
             <ul class="flex flex-col justify-around items-center mb-4">
-                <li class="text-2xl">VRtig.0</li>
-                <li class="group"><i class="fas fa-phone-alt group-hover:text-yellow-500"></i> <a href="tel:0607884632" class="group-hover:text-yellow-500 underline">06 07 88 46 32</a></li>
-                <li class="group"><i class="fas fa-envelope group-hover:text-yellow-500"></i> <a href="mailto:alain.chaix@vrtig0.fr" class="group-hover:text-yellow-500 underline">alain.chaix@vrtig0.fr</a></li>
+                <li class="text-2xl">Skincasts</li>
+                <li class="group"><i class="fas fa-phone-alt group-hover:text-yellow-500"></i> <a href="tel:0607884632" class="group-hover:text-yellow-500 underline">06 07 88 46 32 - Alain Chaix</a></li>
+                <li class="group"><i class="fas fa-envelope group-hover:text-yellow-500"></i> <a href="mailto:contact@skincasts.fr" class="group-hover:text-yellow-500 underline">contact@skincasts.fr</a></li>
                 <li class="group"><i class="fas fa-map-marker-alt group-hover:text-yellow-500"></i> <a href="https://www.google.fr/maps/place/3+Rue+Yvan+Audouard+B%C3%A2timent+E107,+13400+Arles/@43.6734367,4.636591,17z/data=!3m1!4b1!4m5!3m4!1s0x12b67673e66f2afb:0xb7da5c06ab985cb4!8m2!3d43.6734328!4d4.6387797" class="group-hover:text-yellow-500 underline" target="_blank" rel=noopener>3 rue Yvan Audouard Bâtiment E107 - 13520 Arles</a></li>
             </ul>
             </address>
