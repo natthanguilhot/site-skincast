@@ -68,3 +68,74 @@ iframe {
 .bg-gray-main {
   background-color: #111827;
 }
+// ANIMATION SCROLLING
+.mouse_exemple {
+  animation: mouseexemple 1.5s ease-in-out 0s infinite normal both;
+  left: 43%;
+  right: 43%;
+  @media (max-width: 900px) {
+    animation: mouseexemple-mobile 1.5s ease-in 0s infinite normal both;
+  }
+}
+@keyframes mouseexemple {
+  0% {
+    height: 0.25rem;
+    transform-origin: top;
+  }
+  33% {
+    transform-origin: bottom;
+    height: 0.8rem;
+  }
+  66% {
+    transform-origin: bottom;
+    height: 0.8rem;
+    transform: scaleY(0.3);
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes mouseexemple-mobile {
+  0% {
+    height: 0.25rem;
+    transform-origin: bottom;
+  }
+  33% {
+    height: 0.92rem;
+  }
+  66% {
+    transform: scaleY(0.3);
+    transform-origin: top;
+    height: 0.92rem;
+    transform: scaleY(0.3);
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform-origin: top;
+  }
+}
+.separation_mouse {
+  width: 0.10rem;
+  left: 48%;
+  right: 48%;
+}
+.scrolling_phone {
+  left: 45%;
+  top: 40%;
+  animation: scrolling_phone 1.5s ease-in-out 0s infinite normal both;
+}
+@keyframes scrolling_phone {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1rem);
+  }
+}
+//
