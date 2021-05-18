@@ -100,24 +100,23 @@ iframe {
 }
 @keyframes mouseexemple-mobile {
   0% {
-    height: 0.25rem;
-    transform-origin: bottom;
+    width: 0.25rem;
+    transform-origin: right;
   }
   33% {
-    height: 0.92rem;
+    width: 0.92rem;
   }
   66% {
-    transform: scaleY(0.3);
-    transform-origin: top;
-    height: 0.92rem;
-    transform: scaleY(0.3);
+    transform-origin: left;
+    width: 0.92rem;
+    transform: scaleX(-0.3);
   }
   90% {
     opacity: 0;
   }
   100% {
     opacity: 0;
-    transform-origin: top;
+    transform-origin: left;
   }
 }
 .separation_mouse {
@@ -127,7 +126,7 @@ iframe {
 }
 .scrolling_phone {
   left: 45%;
-  top: 40%;
+  top: 30%;
   animation: scrolling_phone 1.5s ease-in-out 0s infinite normal both;
 }
 @keyframes scrolling_phone {
@@ -135,7 +134,7 @@ iframe {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(1rem);
+    transform: translateX(-1rem);
   }
 }
 //
