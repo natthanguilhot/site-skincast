@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">    
     <title>Skincasts - Attelles imprimé en 3D sur mesure</title>
-    <link rel="icon" href="./img/Icon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/LOGO_SkinCast.png" type="image/x-icon">
     <meta name="description" content="SkinCasts fabrique des attelles à l'aide d'imprimante 3D. Grâce à l'impression 3D, nous pouvons créer des attelles uniques qui vont parfaitement s'adapter aux besoins du patient.">
     <meta name="robots" content="follow, index">
     <link rel="canonical" href="https://www.skincasts.fr/"/>
@@ -15,7 +15,7 @@
 
     <!-- ajout des fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- Fin ajout des fonts -->
 
     <!-- Elements affiché lors d'un partage  -->
@@ -46,10 +46,11 @@
     <header class="h-auto w-full lg:flex justify-center mb-4 max-w-screen-xl m-auto">
         <div class="w-full flex flex-col justify-around items-center">
             <div class="flex justify-center items-center lg:p-8 mt-4 opacity-0">
-                <h1 class="text-5xl lg:text-8xl">Skincasts</h1>
+                <img src="./img/LOGO_SkinCast_header.png" alt="SkinCasts" class="">
+                <h1 class="text-5xl lg:text-8xl hidden">Skincasts</h1>
             </div>
             <div class="w-full opacity-0">
-                <p class="p-4 w-11/12 m-auto text-xl lg:text-3xl lg:w-8/12 max-w-sm">Une <strong class="font-normal">attelle</strong> conçu pour s'adapter à votre morphologie, <span class="font-semibold lg:text-4xl text-2xl">conçu pour vous.</span></p>
+                <p class="p-4 w-11/12 m-auto text-xl lg:text-3xl lg:w-8/12 max-w-sm">Une <strong class="font-normal">attelle</strong> conçu pour s'adapter à votre morphologie, conçu pour <span class="font-semibold lg:text-4xl text-2xl">vous.</span></p>
             </div>
         </div>
         <div class="w-full flex justify-center items-center">
@@ -72,32 +73,51 @@
                 <img src="./img/fonctionnement_imprimante.png" alt="Dessin expliquant le fonctionnement d'une impression" class="w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96 flex justify-center items-center opacity-0 object-cover object-center">
             </div>
         </div>
-        <div class="flex justify-center items-center h-auto w-full py-8 bg-gray-800">
-            <figure class="flex flex-col justify-center items-center opacity-0 md:w-11/12 lg:w-5/12">
-                <img title="Exemple d'une attelle skincasts posé" src="./img/attelle_pose.png" alt="Photo d'une attelle posé" class="object-cover object-center rounded w-11/12 h-96 md:h-96  md:w-8/12 max-w-screen-sm">
-                <figcaption class="text-center mt-2">Exemple d'une attelle Skincasts posée</figcaption>
-            </figure>
-        </div>
-        <div class="w-full">
-            <div class="max-w-screen-xl lg:w-full flex m-auto lg:justify-center items-center flex-col-reverse md:flex-row">
-                <div class="my-4 m-auto w-11/12 md:m-8 lg:w-10/12 xl:w-9/12 flex-wrap flex justify-center max-w-screen-md">
-                    <figure class="my-4 m-auto w-11/12 lg:m-8 flex-wrap flex justify-center border rounded p-2 bg-gray-800 max-w-screen-lg">
-                        <img src="./img/bobineverte.jpg" class="h-30 w-5/12 md:w-4/12 bg-lightgreen object-cover object-center p-2 rounded m-2 max-w-sm opacity-0" alt="Bobine de PLA vert clair">
-                        <img src="./img/bobinerouge.jpg" class="h-30 w-5/12 md:w-4/12 bg-deepred object-cover object-center p-2 rounded m-2 max-w-sm opacity-0" alt="Bobine de PLA rouge">
-                        <img src="./img/bobinegrise.jpg" class="h-30 w-5/12 md:w-4/12 bg-gray-500 object-cover object-center p-2 rounded m-2 max-w-sm opacity-0" alt="Bobine de PLA gris">
-                        <img src="./img/bobineblanche.jpg" class="h-30 w-5/12 md:w-4/12 bg-gray-main object-cover object-center p-2 rounded m-2 max-w-sm opacity-0" alt="Bobine de PLA blanc">
-                        <figcaption class="opacity-0">Bobine de PLA dans différents coloris</figcaption>
-                    </figure>
-                </div>
-                <p class="my-4 m-auto md:m-8 lg:w-8/12 opacity-0 w-11/12">Afin de pousser la personnalisation et de répondre aux envies du patient, nous proposons d'imprimer nos attelles dans différent coloris <i class="fas fa-swatchbook"></i>. (Sachez qu'il existe énormément d'autres couleurs de PLA que celles présenté ici)</p>
-            </div>
-        </div>
         <div class="lg:w-full p-4 flex flex-col m-auto lg:justify-center items-center max-w-screen-xl">
             <h2 class="text-2xl p-4 text-center opacity-0">Retrouvez la rediffusion de notre interview sur BFM Business !</h2>
             <p class="my-4 m-auto lg:w-8/12 opacity-0">Vous pouvez retrouver notre interview en suivant ce lien : <a href="https://www.bfmtv.com/economie/replay-emissions/check-up-sante/check-up-sante-samedi-15-mai_VN-202105150111.html" class="underline hover:text-yellow-500" target="_blank" rel="noopener">Interview Skincasts BFM Business - Check-up Santé - Samedi 15 mai</a> et en vous rendant directement à 17:12.</p>
             <!-- <div class="w-11/12 lg:w-5/12 lg:h-96 h-60 m-auto lg:m-8 md:h-96 flex justify-center items-center bg-black opacity-0"></div> -->
         </div>
     </main>
+    
+    <section class="leading-7 text-lg">
+
+        <h2 class="text-xl text-center w-full">Les témoignages des patients</h2>
+
+        <div class="w-full flex flex-wrap max-w-screen-xl m-auto">
+
+            <div class="w-11/12 m-auto flex justify-center items-center md:w-5/12">
+                <img src="./img/img_attelle_temoignage3.png" alt="" class="w-3/12 p-4 object-cover object-center">
+                <div class="w-full p-4">
+                    <q class="italic">Je vous donne ce que vous voulez, mais je veux la même !</q>
+                    <p>Anouar.B - 34 ans</p>
+                </div>
+            </div>
+            <div class="w-11/12 m-auto flex justify-center items-center md:w-5/12">
+                <img src="./img/img_attelle_temoignage2.png" alt="" class="w-3/12 p-4 object-cover object-center">
+                <div class="w-full p-4">
+                    <p>Bodybuilder, après mauvaise tolérance d’un plâtre en résine et d’une attelle thermoformage:</p><q class="italic">Mais pourquoi ne m’a-t- on pas fait cette attelle plus tôt ?</q>
+                    <p>Kevin.R - 38 ans</p>
+                </div>
+            </div>
+            <div class="w-11/12 m-auto flex justify-center items-center md:w-5/12">
+                <img src="./img/img_attelle_temoignage1.png" alt="" class="w-3/12 p-4 object-cover object-center">
+                <div class="w-full p-4">
+                    <q class="italic">L’attelle est très confortable, j’ai pu continuer à travailler et surtout me gratter à travers l’attelle et je ne m’en suis pas privée !</q>
+                    <p>Annie.B - 77 ans</p>
+                </div>
+            </div>
+            <div class="w-11/12 m-auto flex justify-center items-center md:w-5/12">
+                <img src="./img/img_attelle_temoignage4.png" alt="" class="w-3/12 p-4 object-cover object-center">
+                <div class="w-full p-4">
+                    <q class="italic">Je vous avoue avoir repris mon activité professionnelle alors que j’étais encore immobilisée.</q>
+                    <p>Sylvie.A - 51 ans</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
 
     <footer class="bg-footer flex flex-col justify-center items-center relative bg-transparent py-4 bg-gray-800">
         <div class="w-full h-full flex flex-col justify-center items-center pt-8 z-20 text-white max-w-md p-4 rounded-md">
