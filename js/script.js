@@ -25,23 +25,25 @@
     init();
     checkPosition();
   })();
-let arrayImgCarousel = document.querySelectorAll('.img_carousel');
-let previousImgCarousel = document.querySelector('.previous_img_carousel');
+
+// CAROUSEL
+let arrayImgCarousel = document.querySelectorAll('.img_carousel'); // On selectionne toutes les images du carousel
+let previousImgCarousel = document.querySelector('.previous_img_carousel'); // On selectionne les fleches
 let nextImgCarousel = document.querySelector('.next_img_carousel');
-nextImgCarousel.addEventListener('click', function(){
-  for (const [i, img] of arrayImgCarousel.entries()) {
-    if(arrayImgCarousel[2].classList.contains('flex')) {
+nextImgCarousel.addEventListener('click', function(){ // Au click de la fleche,
+  for (const [i, img] of arrayImgCarousel.entries()) { // Pour chaque img,
+    if(arrayImgCarousel[2].classList.contains('flex')) { // Si l'image est la dernière, alors on reaffiche la premiere
       arrayImgCarousel[2].classList.replace('flex', 'hidden');
       arrayImgCarousel[0].classList.replace('hidden',"flex");
       break
-    }else if(img.classList.contains('flex')) {
+    }else if(img.classList.contains('flex')) { // Sinon on désaffiche l'image acutelle et on affiche l'image suivante (i+1)
       img.classList.replace('flex','hidden');
       arrayImgCarousel[i+1].classList.replace('hidden','flex')
       break
     }
   }
 });
-previousImgCarousel.addEventListener('click', function(){
+previousImgCarousel.addEventListener('click', function(){ // Même traitement mais avec la fleche précédente
   for (const [i, img] of arrayImgCarousel.entries()) {
     if(arrayImgCarousel[0].classList.contains('flex')) {
       arrayImgCarousel[0].classList.replace('flex', 'hidden');
