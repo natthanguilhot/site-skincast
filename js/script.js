@@ -32,8 +32,8 @@ let previousImgCarousel = document.querySelector('.previous_img_carousel'); // O
 let nextImgCarousel = document.querySelector('.next_img_carousel');
 nextImgCarousel.addEventListener('click', function(){ // Au click de la fleche,
   for (const [i, img] of arrayImgCarousel.entries()) { // Pour chaque img,
-    if(arrayImgCarousel[2].classList.contains('flex')) { // Si l'image est la dernière, alors on reaffiche la premiere
-      arrayImgCarousel[2].classList.replace('flex', 'hidden');
+    if(arrayImgCarousel[arrayImgCarousel.length-1].classList.contains('flex')) { // Si l'image est la dernière, alors on reaffiche la premiere
+      arrayImgCarousel[arrayImgCarousel.length-1].classList.replace('flex', 'hidden');
       arrayImgCarousel[0].classList.replace('hidden',"flex");
       break
     }else if(img.classList.contains('flex')) { // Sinon on désaffiche l'image acutelle et on affiche l'image suivante (i+1)
@@ -47,7 +47,7 @@ previousImgCarousel.addEventListener('click', function(){ // Même traitement ma
   for (const [i, img] of arrayImgCarousel.entries()) {
     if(arrayImgCarousel[0].classList.contains('flex')) {
       arrayImgCarousel[0].classList.replace('flex', 'hidden');
-      arrayImgCarousel[2].classList.replace('hidden',"flex");
+      arrayImgCarousel[arrayImgCarousel.length-1].classList.replace('hidden',"flex");
       break
     }else if(img.classList.contains('flex')) {
       img.classList.replace('flex','hidden');
