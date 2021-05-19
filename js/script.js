@@ -25,19 +25,32 @@
     init();
     checkPosition();
   })();
-  let arrayImgCarousel = document.querySelectorAll('.img_carousel');
-  let previousImgCarousel = document.querySelector('.previous_img_carousel');
-  let nextImgCarousel = document.querySelector('.next_img_carousel');
-  nextImgCarousel.addEventListener('click', function(){
-    for (const [i, img] of arrayImgCarousel.entries()) {
-      if(arrayImgCarousel[2].classList.contains('flex')) {
-        arrayImgCarousel[2].classList.replace('flex', 'hidden');
-        arrayImgCarousel[0].classList.replace('hidden',"flex");
-        break
-      }else if(img.classList.contains('flex')) {
-        img.classList.replace('flex','hidden');
-        arrayImgCarousel[i+1].classList.replace('hidden','flex')
-        break
-      }
+let arrayImgCarousel = document.querySelectorAll('.img_carousel');
+let previousImgCarousel = document.querySelector('.previous_img_carousel');
+let nextImgCarousel = document.querySelector('.next_img_carousel');
+nextImgCarousel.addEventListener('click', function(){
+  for (const [i, img] of arrayImgCarousel.entries()) {
+    if(arrayImgCarousel[2].classList.contains('flex')) {
+      arrayImgCarousel[2].classList.replace('flex', 'hidden');
+      arrayImgCarousel[0].classList.replace('hidden',"flex");
+      break
+    }else if(img.classList.contains('flex')) {
+      img.classList.replace('flex','hidden');
+      arrayImgCarousel[i+1].classList.replace('hidden','flex')
+      break
     }
-  });
+  }
+});
+previousImgCarousel.addEventListener('click', function(){
+  for (const [i, img] of arrayImgCarousel.entries()) {
+    if(arrayImgCarousel[0].classList.contains('flex')) {
+      arrayImgCarousel[0].classList.replace('flex', 'hidden');
+      arrayImgCarousel[2].classList.replace('hidden',"flex");
+      break
+    }else if(img.classList.contains('flex')) {
+      img.classList.replace('flex','hidden');
+      arrayImgCarousel[i-1].classList.replace('hidden','flex')
+      break
+    }
+  }
+});
