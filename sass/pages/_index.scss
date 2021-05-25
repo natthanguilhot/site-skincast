@@ -137,3 +137,52 @@ iframe {
     transform: translateX(-1rem);
   }
 }
+
+.NextTranslateXActual {
+  animation: NextTranslateXActual 0.5s ease 0s normal both;
+}
+@keyframes NextTranslateXActual {
+  from {
+    transform: translateX(0rem);
+  }
+  to {
+    transform: translateX(-8rem);
+    opacity: 0;
+  }
+}
+.NextTranslateXNext {
+  animation: NextTranslateXNext 0.5s ease 0s normal both;
+}
+@keyframes NextTranslateXNext {
+  from {
+   transform: translateX(15rem);
+   opacity: 0;
+  }
+  to {
+    transform: translateX(0rem);
+  }
+}
+
+.PreviousTranslateXActual {
+  animation: PreviousTranslateXActual 0.5s ease normal both;
+}
+@keyframes PreviousTranslateXActual {
+  from {
+    transform: translateX(0rem);
+  }
+  to {
+    transform: translateX(8rem);
+    opacity: 0;
+  }
+}
+.PreviousTranslateXNext {
+  animation: PreviousTranslateXNext 0.5s ease normal both;
+}
+@keyframes PreviousTranslateXNext {
+  from {
+    transform: translateX(-15rem);
+  }
+  to {
+    transform: translateX(0rem);
+  }
+}
