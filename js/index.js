@@ -1,5 +1,4 @@
-import {nextCarrousel} from './script.js';
-import {previousCarrousel} from './script.js';
+import {nextCarrousel,previousCarrousel} from './script.js';
 
 // CARROUSEL
 let arrayImgCarrousel = document.querySelectorAll('.img_carrousel'); // On selectionne toutes les images du carousel
@@ -12,8 +11,6 @@ previousImgCarrousel.addEventListener('click', function(){ // Même traitement m
   previousCarrousel(arrayImgCarrousel);
 });
 //
-
 setInterval(() => {
     nextCarrousel(arrayImgCarrousel);
   }, 10000);
-  
