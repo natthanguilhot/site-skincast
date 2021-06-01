@@ -10,7 +10,16 @@ nextImgCarrousel.addEventListener('click', function(){ // Au click de la fleche,
 previousImgCarrousel.addEventListener('click', function(){ // Même traitement mais avec la fleche précédente
   previousCarrousel(arrayImgCarrousel);
 });
-//
 setInterval(() => {
     nextCarrousel(arrayImgCarrousel);
-  }, 10000);
+}, 10000);
+//
+
+// Galerie
+let divGalerie = document.querySelector('#container_galerie');
+let arrowRigthGalerie = document.querySelector('.arrow_right_galerie');
+let scrollX = 50;
+arrowRigthGalerie.addEventListener('click', function(){
+  divGalerie.scrollTo(scrollX,0);
+  scrollX = scrollX +50;
+});
