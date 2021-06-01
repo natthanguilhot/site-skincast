@@ -28,6 +28,10 @@ main:hover > .barsection {
   color: black;
 }
 
+.text-shadow {
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
 .transition_top {
   animation: transitiontopY 1s ease-out 0s both;
 }
@@ -76,77 +80,35 @@ iframe {
   background-color: #111827;
 }
 
-.mouse_exemple {
-  animation: mouseexemple 1.5s ease-in-out 0s infinite normal both;
-  left: 43%;
-  right: 43%;
-}
-@media (max-width: 900px) {
-  .mouse_exemple {
-    animation: mouseexemple-mobile 1.5s ease-in 0s infinite normal both;
-  }
+::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
 }
 
-@keyframes mouseexemple {
-  0% {
-    height: 0.25rem;
-    transform-origin: top;
-  }
-  33% {
-    transform-origin: bottom;
-    height: 0.8rem;
-  }
-  66% {
-    transform-origin: bottom;
-    height: 0.8rem;
-    transform: scaleY(0.3);
-  }
-  90% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes mouseexemple-mobile {
-  0% {
-    width: 0.25rem;
-    transform-origin: right;
-  }
-  33% {
-    width: 0.92rem;
-  }
-  66% {
-    transform-origin: left;
-    width: 0.92rem;
-    transform: scaleX(-0.3);
-  }
-  90% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    transform-origin: left;
-  }
-}
-.separation_mouse {
-  width: 0.1rem;
-  left: 48%;
-  right: 48%;
+::-webkit-scrollbar-thumb {
+  background: #1F2937;
+  border-radius: 10px;
 }
 
-.scrolling_phone {
-  left: 45%;
-  top: 30%;
-  animation: scrolling_phone 1.5s ease-in-out 0s infinite normal both;
+::-webkit-scrollbar-thumb:hover {
+  background: #1F2937;
 }
 
-@keyframes scrolling_phone {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
+::-webkit-scrollbar-track {
+  background: #111827;
+  border-radius: 10px;
+}
+
+.arrow_galerie {
+  animation: arrow_galerie 1s ease infinite alternate both;
+}
+
+@keyframes arrow_galerie {
+  from {
     transform: translateX(-1rem);
+  }
+  to {
+    transform: translateX(0);
   }
 }
 .NextTranslateXActual {
